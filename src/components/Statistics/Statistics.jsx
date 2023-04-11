@@ -1,6 +1,7 @@
 import React from 'react';
 import Person from '../../assets/All Images/P3OLGJ1 copy 1.png';
 import './Statistics.css'
+import Categories from '../Categories/Categories';
 
 const Statistics = () => {
     return (
@@ -13,11 +14,9 @@ const Statistics = () => {
             </div>
             <div>
                 <img src={Person} alt="" />
-            </div>
+            </div>    
         </div>
-        <div className="category">
-
-        </div>
+        <Categories></Categories>
        </div>
     );
 };
