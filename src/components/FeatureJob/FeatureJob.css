@@ -1,0 +1,6 @@
+.jobs-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 32px 100px;
+    gap: 25px;
+}

@@ -1,0 +1,155 @@
+[
+    {
+        "id":1,
+        "img": "/src/assets/Logo/google-1-1 1.png",
+        "name": "Technical Database Engineer",
+        "tag": "Google LLC",
+        "type": "Remote",
+        "timing": "Full Time",
+        "location": "Dhaka, Bangladesh      ",
+        "salary": " 100K - 150K",
+        "details":{
+            "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+            "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+            "requirements": "Bachelor degree to complete any reputational university.",
+            "experiences": "2-3 Years in this field.",
+            "title": "Product Designer",
+            "phone": "01750-00 00 00",
+            "email": "info@gmail.com",
+            "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh"
+        }
+    },
+    {
+        "id":2,
+        "img": "https://admin.buytestseries.com/ProviderManagement/ProviderLogo/1774/logo.png",
+        "name": "Finance Manager- CEO DESK",
+        "tag": "EDUCBA",
+        "type": "Onsite",
+        "timing": "Full Time",
+        "location": "Kolkata, Mumbai",
+        "salary": " 120K - 150K",
+        "details":{
+            "description": "We at EduCBA (Corporate Bridge Academy) provide the finest training and learning solutions all over Asia. For more details about our company, go through our brochure attached below or go to www.educba.com",
+            "requirements": "Bachelor degree to complete any reputational university.",
+            "experiences": "0 - 2 Year(s).",
+            "title": "Product Management",
+            "phone": "01750-00 00 00",
+            "email": "dbucba@gmail.com",
+            "address": "Mumbai / Kolkata"
+        }
+    },
+    {
+        "id":3,
+        "img": "https://admin.buytestseries.com/ProviderManagement/ProviderLogo/1774/logo.png",
+        "name": "Finance Manager- CEO DESK",
+        "tag": "EDUCBA",
+        "type": "Onsite",
+        "timing": "Full Time",
+        "location": "Kolkata, Mumbai",
+        "salary": " 120K - 150K",
+        "details":{
+            "description": "We at EduCBA (Corporate Bridge Academy) provide the finest training and learning solutions all over Asia. For more details about our company, go through our brochure attached below or go to www.educba.com",
+            "requirements": "Bachelor degree to complete any reputational university.",
+            "experiences": "0 - 2 Year(s).",
+            "title": "Product Management",
+            "phone": "01750-00 00 00",
+            "email": "dbucba@gmail.com",
+            "address": "Mumbai / Kolkata"
+        }
+    },
+    {
+        "id":4,
+        "img": "https://admin.buytestseries.com/ProviderManagement/ProviderLogo/1774/logo.png",
+        "name": "Finance Manager- CEO DESK",
+        "tag": "EDUCBA",
+        "type": "Onsite",
+        "timing": "Full Time",
+        "location": "Kolkata, Mumbai",
+        "salary": " 120K - 150K",
+        "details":{
+            "description": "We at EduCBA (Corporate Bridge Academy) provide the finest training and learning solutions all over Asia. For more details about our company, go through our brochure attached below or go to www.educba.com",
+            "requirements": "Bachelor degree to complete any reputational university.",
+            "experiences": "0 - 2 Year(s).",
+            "title": "Product Management",
+            "phone": "01750-00 00 00",
+            "email": "dbucba@gmail.com",
+            "address": "Mumbai / Kolkata"
+        }
+    },
+    {
+        "id":5,
+        "img": "https://admin.buytestseries.com/ProviderManagement/ProviderLogo/1774/logo.png",
+        "name": "Finance Manager- CEO DESK",
+        "tag": "EDUCBA",
+        "type": "Onsite",
+        "timing": "Full Time",
+        "location": "Kolkata, Mumbai",
+        "salary": " 120K - 150K",
+        "details":{
+            "description": "We at EduCBA (Corporate Bridge Academy) provide the finest training and learning solutions all over Asia. For more details about our company, go through our brochure attached below or go to www.educba.com",
+            "requirements": "Bachelor degree to complete any reputational university.",
+            "experiences": "0 - 2 Year(s).",
+            "title": "Product Management",
+            "phone": "01750-00 00 00",
+            "email": "dbucba@gmail.com",
+            "address": "Mumbai / Kolkata"
+        }
+    },
+    {
+        "id":6,
+        "img": "https://admin.buytestseries.com/ProviderManagement/ProviderLogo/1774/logo.png",
+        "name": "Finance Manager- CEO DESK",
+        "tag": "EDUCBA",
+        "type": "Onsite",
+        "timing": "Full Time",
+        "location": "Kolkata, Mumbai",
+        "salary": " 120K - 150K",
+        "details":{
+            "description": "We at EduCBA (Corporate Bridge Academy) provide the finest training and learning solutions all over Asia. For more details about our company, go through our brochure attached below or go to www.educba.com",
+            "requirements": "Bachelor degree to complete any reputational university.",
+            "experiences": "0 - 2 Year(s).",
+            "title": "Product Management",
+            "phone": "01750-00 00 00",
+            "email": "dbucba@gmail.com",
+            "address": "Mumbai / Kolkata"
+        }
+    },
+    {
+        "id":7,
+        "img": "https://admin.buytestseries.com/ProviderManagement/ProviderLogo/1774/logo.png",
+        "name": "Finance Manager- CEO DESK",
+        "tag": "EDUCBA",
+        "type": "Onsite",
+        "timing": "Full Time",
+        "location": "Kolkata, Mumbai",
+        "salary": " 120K - 150K",
+        "details":{
+            "description": "We at EduCBA (Corporate Bridge Academy) provide the finest training and learning solutions all over Asia. For more details about our company, go through our brochure attached below or go to www.educba.com",
+            "requirements": "Bachelor degree to complete any reputational university.",
+            "experiences": "0 - 2 Year(s).",
+            "title": "Product Management",
+            "phone": "01750-00 00 00",
+            "email": "dbucba@gmail.com",
+            "address": "Mumbai / Kolkata"
+        }
+    },
+    {
+        "id":8,
+        "img": "https://admin.buytestseries.com/ProviderManagement/ProviderLogo/1774/logo.png",
+        "name": "Finance Manager- CEO DESK",
+        "tag": "EDUCBA",
+        "type": "Onsite",
+        "timing": "Full Time",
+        "location": "Kolkata, Mumbai",
+        "salary": " 120K - 150K",
+        "details":{
+            "description": "We at EduCBA (Corporate Bridge Academy) provide the finest training and learning solutions all over Asia. For more details about our company, go through our brochure attached below or go to www.educba.com",
+            "requirements": "Bachelor degree to complete any reputational university.",
+            "experiences": "0 - 2 Year(s).",
+            "title": "Product Management",
+            "phone": "01750-00 00 00",
+            "email": "dbucba@gmail.com",
+            "address": "Mumbai / Kolkata"
+        }
+    }
+]

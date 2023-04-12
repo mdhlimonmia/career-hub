@@ -2,6 +2,7 @@ import React from 'react';
 import Person from '../../assets/All Images/P3OLGJ1 copy 1.png';
 import './Statistics.css'
 import Categories from '../Categories/Categories';
+import FeatureJob from '../FeatureJob/FeatureJob';
 
 const Statistics = () => {
     return (
@@ -17,6 +18,7 @@ const Statistics = () => {
             </div>    
         </div>
         <Categories></Categories>
+        <FeatureJob></FeatureJob>
        </div>
     );
 };
