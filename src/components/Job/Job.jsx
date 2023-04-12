@@ -1,6 +1,8 @@
 import React from 'react';
 import './Job.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee,faLocationDot , faDollar} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 const Job = (props) => {
     const {img, name, tag, type, timing, location, salary, details} = props.job;
     return (
@@ -10,8 +12,8 @@ const Job = (props) => {
             <p className='tag'>{tag} </p>
             <a className='job-button'>{type}</a> 
             <a className='job-button'>{timing}</a>
-            <p className='location'>{location}      <span>   Salary: {salary}</span></p>
-            <button>View Details</button>
+            <p className='location'><FontAwesomeIcon icon={faLocationDot} /> {location}      <span style={{paddingLeft: "15px"}}> <FontAwesomeIcon icon={faDollar} />  Salary: {salary}</span></p>
+            <Link to ={'details'} ><button>View Details</button></Link>
         </div>
     );
 };
