@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee,faLocationDot , faDollar} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 const Job = (props) => {
-    const {img, name, tag, type, timing, location, salary, details} = props.job;
+    const {id,img, name, tag, type, timing, location, salary, details} = props.job;
     return (
         <div className='job-container'>
             <img src={img} alt="" />
@@ -13,7 +13,7 @@ const Job = (props) => {
             <a className='job-button'>{type}</a> 
             <a className='job-button'>{timing}</a>
             <p className='location'><FontAwesomeIcon icon={faLocationDot} /> {location}      <span style={{paddingLeft: "15px"}}> <FontAwesomeIcon icon={faDollar} />  Salary: {salary}</span></p>
-            <Link to ={'details'} ><button>View Details</button></Link>
+            <Link to ={`details/${id}`} ><button>View Details</button></Link>
         </div>
     );
 };
