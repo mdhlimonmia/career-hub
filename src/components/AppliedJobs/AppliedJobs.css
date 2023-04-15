@@ -2,6 +2,20 @@
     margin-top: 100px;
     text-align: center;
 }
+.filter-container{
+    margin: 150px 200px 20px 200px;
+    position: relative;
+}
+.filter-container p{
+    width: 75px;
+    background-color: #F4F4F4 ;
+    border-radius: 3px;
+    padding: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+
+}
 .view-job-container{
-    margin: 150px 200px 0px 200px;
+    margin: 0px 200px 0px 200px;
 }
