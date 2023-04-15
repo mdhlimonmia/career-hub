@@ -11,6 +11,7 @@ import Main from './components/Layout/Main';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Blog from './components/Blog/Blog';
 import JobDetails from './components/JobDetails/JobDetails';
+import Home from './components/Home/Home';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
+        element: <Home></Home>
+      },
+      {
+        path: 'statistics',
         element: <Statistics></Statistics>
       },
       {
@@ -28,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: 'applied',
         element: <AppliedJobs></AppliedJobs>
+      },
+      {
+        path: 'applied/detail/:id',
+        element: <JobDetails></JobDetails>
       },
       {
         path: 'blog',

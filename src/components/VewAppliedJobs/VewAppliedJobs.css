@@ -1,0 +1,45 @@
+.view-job{
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    /* height: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.view-container{
+    text-align: left;
+}
+.view-job button{
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 3px;
+}
+.view-job img {
+    width: 100px;
+    height: 65px;
+}
+.view-job h1{
+    color: #474747;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+}
+.view-button{
+    width: 109px;
+    height: 40px;
+    padding: 9px 19px;
+    color: #9873FF;
+    border: 1px solid #9873FF;
+    margin: 20px 20px 20px 0px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+.view-tag{
+    margin-bottom: 20px;
+}
+.view-location{
+    margin-top: 20px;
+}

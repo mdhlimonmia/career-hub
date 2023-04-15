@@ -7,7 +7,8 @@ const Header = () => {
        <div className='header'>
          <h3>Jobs Portal</h3>
          <nav>
-            <Link to="/">Statistics</Link>
+            <Link to="/">Home</Link>
+            <Link to="/statistics">Statistics</Link>
             <Link to="/applied">Applied Jobs</Link>
             <Link to="/blog">Blog</Link>
         </nav>

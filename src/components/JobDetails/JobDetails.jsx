@@ -3,17 +3,41 @@ import { useParams } from 'react-router-dom';
 import './JobDetails.css'
 const JobDetails = () => {
    let {id} = useParams();
-    console.log(id);
     const [single, setSingle]=useState([]);
+    // const [applieJob, setApplieJob]=useState([]);
+    
     useEffect(()=>{
         fetch('/public/jobs.json')
         .then(res=> res.json())
         .then(data => setSingle(data))
     },[])
+
         const newJob = single?.find(job => job.id==id);
-        console.log(newJob)
+        // console.log(newJob)
+        let jobApply=[]
+
+        const handelAppid = (job)=>{
+        const  jobApplied=   JSON.parse(localStorage.getItem('jobs'))
+        const isJob = jobApplied?.find(single => single.id == newJob.id)
+        // console.log(isJob)
+            if(jobApplied){
+                if(isJob){
+                    // console.log("Limon")
+                }else{
+                    jobApply = (jobApplied)
+                    jobApply.push(newJob)
+                    localStorage.setItem("jobs", JSON.stringify(jobApply))
+                }
+
+            }else{
+                jobApply.push(newJob);
+                localStorage.setItem("jobs", JSON.stringify(jobApply))
+            }      
+
+            
+        }
     return (
-        <div>
+        <div className='job-details'>
             <h1>Job Details</h1>
             <div className='single-container'>
                 <div className='singleJob'>
@@ -33,7 +57,7 @@ const JobDetails = () => {
                     <p><b>Phone : </b>{newJob?.details?.phone}</p>
                     <p><b>Email : </b>{newJob?.details?.email}</p>
                     <p><b>Address : </b>{newJob?.details?.address}</p>
-                    <button>Apply Now</button>
+                    <button onClick={()=>handelAppid(newJob)}>Apply Now</button>
                 </div>
             </div>
         </div>
