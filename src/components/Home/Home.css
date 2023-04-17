@@ -23,3 +23,19 @@
 .primary-color{
     color: #997beb;
 }
+
+@media only screen and (max-width:688px) {
+    .container img{
+        margin-left: 50px;
+        width: 500px;
+        height: 444px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 50px;
+    }
+    .text-container{
+        margin-left: 50px;
+    }
+}

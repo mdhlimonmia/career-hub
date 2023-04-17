@@ -4,3 +4,10 @@
     margin: 32px 100px;
     gap: 25px;
 }
+@media only screen and (max-width:688px) {
+    .jobs-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 32px 0px 32px 50px;
+    }
+}
