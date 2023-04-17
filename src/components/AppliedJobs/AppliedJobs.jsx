@@ -1,22 +1,55 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ViewAppliedJobs from '../VewAppliedJobs/VewAppliedJobs';
 import './AppliedJobs.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown} from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faCheck} from '@fortawesome/free-solid-svg-icons'
 
 const AppliedJobs = () => {
+    const [jobs, setJobs] = useState([]);
+    const [filter, setFilter] = useState(true)
+    const [show, setShow] = useState("200000px")
     const appliedJob=JSON.parse(localStorage.getItem('jobs'))
-    // appliedJob.map(job => console.log(job));
-    // console.log(appliedJob);
+   useEffect(()=>{
+    setJobs(appliedJob);
+   },[])
+   console.log(jobs)
+    
+//    Filter For Remote Jobs
+    const remote = ()=>{
+        let filterJobs = appliedJob.filter(job => job.type == "Remote" )
+        setJobs(filterJobs);
+    }
+
+    // Filter For Onsite Jobs
+    const onsite = ()=>{
+        let filterJobs = appliedJob.filter(job => job.type == "Onsite");
+        setJobs(filterJobs);
+    }
+    // Filter Button
+    const Filter = ()=>{
+        setFilter(!filter)
+        if(filter){
+            setShow("-10px")
+        }
+        else{
+            setShow("200000px")
+        }
+        
+    }
     return (
         <div>
             <h1 className='views-container'>Applied Jobs</h1>
+            {/* Filter container */}
             <div className='filter-container'>
-                <p>Filter  <FontAwesomeIcon icon={faChevronDown} /></p>
+                <p onClick={Filter}>Filter By <FontAwesomeIcon icon={faChevronDown} /></p>
+                <ul className='filter' style={{bottom: show}}>
+                    <li onClick={remote}>Remote <FontAwesomeIcon icon={faCheck} /></li>
+                    <li onClick={onsite}>Onsite <FontAwesomeIcon icon={faCheck} /></li>
+                </ul>
             </div>
             <div className='view-job-container'>
             {
-                     appliedJob.map(job => <ViewAppliedJobs
+                   jobs.map(job => <ViewAppliedJobs
                         key = {job.id}
                         job ={job}
                      ></ViewAppliedJobs>)
