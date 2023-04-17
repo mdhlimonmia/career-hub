@@ -1,0 +1,13 @@
+.blog{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.qa-container{
+    text-align: left;
+}
+.qa-container h2{
+    font-size: 30px;
+}
+.qa-container p{
+    font-size: 25px;
+}
