@@ -12,7 +12,7 @@ const AppliedJobs = () => {
    useEffect(()=>{
     setJobs(appliedJob);
    },[])
-   console.log(jobs)
+
     
 //    Filter For Remote Jobs
     const remote = ()=>{
@@ -25,11 +25,12 @@ const AppliedJobs = () => {
         let filterJobs = appliedJob.filter(job => job.type == "Onsite");
         setJobs(filterJobs);
     }
+
     // Filter Button
     const Filter = ()=>{
         setFilter(!filter)
         if(filter){
-            setShow("-10px")
+            setShow("0px")
         }
         else{
             setShow("200000px")

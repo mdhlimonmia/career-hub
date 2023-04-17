@@ -31,6 +31,8 @@
    margin: 10px -5px;
    /* border: 1px solid black; */
    gap: 5px;
+   background-color: #F4F4F4 ;
+   border: 1px solid black;
 
 }
 .view-job-container{
