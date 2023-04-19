@@ -38,3 +38,8 @@
 .view-job-container{
     margin: 0px 200px 0px 200px;
 }
+@media only screen and (max-width:688px) {
+    .view-job-container{
+        margin: 0px 0px 0px 0px;
+    }
+}

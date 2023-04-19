@@ -8,6 +8,7 @@
     .jobs-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin: 32px 0px 32px 50px;
+        margin: 32px 0px 32px 0px;
+
     }
 }

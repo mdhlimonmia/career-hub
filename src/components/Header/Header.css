@@ -9,3 +9,36 @@ nav a{
     margin-right: 50px;
     font-size: 20px;
 }
+.bar-icon{
+    display: none;
+    width: 5px;
+}
+
+@media only screen and (max-width:688px) {
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        text-align: left;
+        gap: 10px;
+        background-color: #F4F4F4 ;
+        border-radius: 3px;
+    }
+    .bar-icon{
+        display: block;
+        width: 30px;
+        position: absolute;
+        left: 40px;
+        top: 70px;
+    }
+    .open{
+        top: 100px;
+        transition-duration: 0.5s;
+    }
+    .close{
+        top: -150px;
+        transition-duration: 0.5s;
+    }
+    
+}

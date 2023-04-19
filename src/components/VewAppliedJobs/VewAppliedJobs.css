@@ -43,3 +43,14 @@
 .view-location{
     margin-top: 20px;
 }
+
+@media only screen and (max-width:688px) {
+    .view-job h1{
+        color: #474747;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .view-job img {
+        width: 80px;
+    }
+}
