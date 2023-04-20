@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './JobDetails.css'
+import { Toaster, toast } from 'react-hot-toast';
+
+
 const JobDetails = () => {
    let {id} = useParams();
     const [single, setSingle]=useState([]);
@@ -19,19 +22,23 @@ const JobDetails = () => {
         const handelAppid = (job)=>{
         const  jobApplied=   JSON.parse(localStorage.getItem('jobs'))
         const isJob = jobApplied?.find(single => single.id == newJob.id)
-        // console.log(isJob)
+        
             if(jobApplied){
                 if(isJob){
                     // console.log("Limon")
+                   return toast.error("Already Applied!!!")
                 }else{
                     jobApply = (jobApplied)
                     jobApply.push(newJob)
                     localStorage.setItem("jobs", JSON.stringify(jobApply))
+                    toast('Here is your toast.');
+                    return toast.success("Apply done!!")
                 }
 
             }else{
                 jobApply.push(newJob);
                 localStorage.setItem("jobs", JSON.stringify(jobApply))
+                return toast.success("Apply done!!")
             }      
 
             

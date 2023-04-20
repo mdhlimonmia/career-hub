@@ -18,7 +18,7 @@ const FeatureJob = () => {
     return (
         <div>
             <h1>Featured Jobs</h1>
-            <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
+            <p>Work with your dream companies by applying to hiring challenges and full-time & part-time jobs/internships.</p>
             <div className='jobs-container'>
                 {
                      jobs.slice(0,see).map(job => <Job

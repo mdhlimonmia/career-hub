@@ -12,6 +12,7 @@ import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Blog from './components/Blog/Blog';
 import JobDetails from './components/JobDetails/JobDetails';
 import Home from './components/Home/Home';
+import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Toaster position="top-right"></Toaster>
      <RouterProvider router={router} />
   </React.StrictMode>,
 )

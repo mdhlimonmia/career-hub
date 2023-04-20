@@ -10,7 +10,7 @@ const Home = () => {
          <div className='container'>
             <div className='text-container'>
                 <h1>Discover New <samp className='primary-color'>Opportunities</samp></h1>
-                <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
+                <p>Explore opportunities from across the globe to learn, showcase skills, gain CV points, & get hired by your dream company.</p>
                 <button>Get Started</button>
             </div>
             <div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import {Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -20,10 +21,10 @@ const Header = () => {
             </span>
          </div>
          <nav className={`nav-bar ${open ? 'open': 'close'}`}>
-            <Link to="/">Home</Link>
-            <Link to="/statistics">Statistics</Link>
-            <Link to="/applied">Applied Jobs</Link>
-            <Link to="/blog">Blog</Link>
+            <ActiveLink to="/">Home</ActiveLink>
+            <ActiveLink to="/statistics">Statistics</ActiveLink>
+            <ActiveLink to="/applied">Applied Jobs</ActiveLink>
+            <ActiveLink to="/blog">Blog</ActiveLink>
         </nav>
         <button>Apply Now</button>
        </div>

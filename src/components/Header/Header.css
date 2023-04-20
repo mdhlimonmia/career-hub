@@ -3,6 +3,7 @@
     gap: 25px;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
 }
 nav a{
     text-decoration: none;
@@ -15,6 +16,9 @@ nav a{
 }
 
 @media only screen and (max-width:688px) {
+    .header{
+        width: auto;
+    }
     .nav-bar{
         display: flex;
         flex-direction: column;
