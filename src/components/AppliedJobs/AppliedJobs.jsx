@@ -50,7 +50,7 @@ const AppliedJobs = () => {
             </div>
             <div className='view-job-container'>
             {
-                   jobs.map(job => <ViewAppliedJobs
+                   jobs?.map(job => <ViewAppliedJobs
                         key = {job.id}
                         job ={job}
                      ></ViewAppliedJobs>)

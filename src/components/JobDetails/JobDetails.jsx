@@ -1,37 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 import './JobDetails.css'
-import { Toaster, toast } from 'react-hot-toast';
-
+import { toast } from 'react-hot-toast';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDollar, faCalendarDays, faPhone, faEnvelopeOpen, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 
 const JobDetails = () => {
    let {id} = useParams();
-    const [single, setSingle]=useState([]);
-    // const [applieJob, setApplieJob]=useState([]);
-    
-    useEffect(()=>{
-        fetch('/public/jobs.json')
-        .then(res=> res.json())
-        .then(data => setSingle(data))
-    },[])
-
+        const single = useLoaderData();
         const newJob = single?.find(job => job.id==id);
         // console.log(newJob)
         let jobApply=[]
 
         const handelAppid = (job)=>{
         const  jobApplied=   JSON.parse(localStorage.getItem('jobs'))
+        console.log(jobApplied)
         const isJob = jobApplied?.find(single => single.id == newJob.id)
         
             if(jobApplied){
                 if(isJob){
-                    // console.log("Limon")
                    return toast.error("Already Applied!!!")
                 }else{
                     jobApply = (jobApplied)
                     jobApply.push(newJob)
                     localStorage.setItem("jobs", JSON.stringify(jobApply))
-                    toast('Here is your toast.');
                     return toast.success("Apply done!!")
                 }
 
@@ -56,14 +48,14 @@ const JobDetails = () => {
                 </div>
                 <div className='job-contact'>
                     <h2>Job Details</h2> <hr />
-                    <p><b>Salary: </b>{newJob?.salary}</p>
-                    <p><b>Job Title : </b>{newJob?.details?.title}</p>
+                    <p><FontAwesomeIcon icon={faDollar} />  <b>Salary: </b>{newJob?.salary}</p>
+                    <p><FontAwesomeIcon icon={faCalendarDays} />  <b>Job Title : </b>{newJob?.details?.title}</p>
                     <br />
                     <h3><b>Contact Information</b></h3>
                     <hr /> <br />
-                    <p><b>Phone : </b>{newJob?.details?.phone}</p>
-                    <p><b>Email : </b>{newJob?.details?.email}</p>
-                    <p><b>Address : </b>{newJob?.details?.address}</p>
+                    <p><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>   <b>Phone : </b>{newJob?.details?.phone}</p>
+                    <p><FontAwesomeIcon icon={faEnvelopeOpen} />  <b>Email : </b>{newJob?.details?.email}</p>
+                    <p><FontAwesomeIcon icon={faLocationDot} /> <b>Address : </b>{newJob?.details?.address}</p>
                     <button onClick={()=>handelAppid(newJob)}>Apply Now</button>
                 </div>
             </div>

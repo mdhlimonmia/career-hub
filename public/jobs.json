@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "img": "/src/assets/Logo/google-1-1 1.png",
+        "img": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/63f4cba2e5bf6_google-logo-transparent.png?d=110x110",
         "name": "Technical Database Engineer",
         "tag": "Google LLC",
         "type": "Remote",
@@ -78,7 +78,7 @@
     },
     {
         "id":5,
-        "img": "/src/assets/Logo/netflix-4 1.png",
+        "img": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/63f4d3cca18f9_netflix-logo-red-black-png.png?d=110x110",
         "name": "Launch Manager",
         "tag": "Netflix",
         "type": "Remote",
